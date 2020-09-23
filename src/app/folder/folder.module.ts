@@ -28,6 +28,8 @@ import "@ui5/webcomponents-fiori/dist/SideNavigationSubItem.js";
 import "@ui5/webcomponents-icons/dist/Assets.js";
 import "@ui5/webcomponents-fiori/dist/ProductSwitch.js";
 import "@ui5/webcomponents-fiori/dist/ProductSwitchItem.js";
+import '@ui5/webcomponents/dist/Timeline';
+import '@ui5/webcomponents/dist/TimelineItem';
 
 @NgModule({
   imports: [

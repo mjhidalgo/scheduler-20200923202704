@@ -10,26 +10,16 @@
 <ion-content [fullscreen]="true">
 
  
-  <div id="container">
-    <ui5-button design="Default">Enabled</ui5-button>
-    <ui5-button disabled>Disabled</ui5-button>
-    <ui5-button design="Transparent">Cancel</ui5-button>
-    <ui5-button design="Positive">Approve</ui5-button>
-    <ui5-button design="Negative">Decline</ui5-button>
-    <ui5-button design="Emphasized">Subscribe</ui5-button>
-    <ui5-product-switch>
-      <ui5-product-switch-item heading="Home" subtitle="Central Home" icon="sap-icon://home"></ui5-product-switch-item>
-      <ui5-product-switch-item heading="Analytics Cloud" subtitle="Analytics Cloud" icon="sap-icon://business-objects-experience"></ui5-product-switch-item>
-      <ui5-product-switch-item heading="Catalog" subtitle="Ariba" icon="sap-icon://contacts"></ui5-product-switch-item>
-      <ui5-product-switch-item heading="Travel & Expense" subtitle="Concur" icon="sap-icon://flight"></ui5-product-switch-item>
-    </ui5-product-switch>
-  
-    <ui5-list id="myList" class="full-width">
-      <ui5-li icon="nutrition-activity" description="Tropical plant with an edible fruit" info="In-stock" info-state="Success">Pineapple</ui5-li>
-      <ui5-li icon="nutrition-activity" description="Occurs between red and yellow" info="Expires" info-state="Warning">Orange</ui5-li>
-      <ui5-li icon="nutrition-activity" description="The yellow lengthy fruit" info="Re-stock" info-state="Information">Blueberry</ui5-li>
-      <ui5-li icon="nutrition-activity" description="The tropical stone fruit" info="Re-stock" info-state="Error">Mango</ui5-li>
-    </ui5-list>
+ 
+    <ui5-timeline>
+      <ui5-timeline-item id="test-item" title-text=" called" subtitle-text="20.02.2017 11:30" icon="phone" item-name="John Smith " item-name-clickable></ui5-timeline-item>
+      <ui5-timeline-item title-text="Weekly Sync - CP Design" subtitle-text="27.07.2017 (11:00 - 12:30)" icon="calendar">
+        <div>MR SOF02 2.43</div>
+      </ui5-timeline-item>
+      <ui5-timeline-item title-text="Video Converence Call - UI5" subtitle-text="31.01.2018 (12:00 - 13:00)" icon="calendar">
+        <div>Online meeting</div>
+      </ui5-timeline-item>
+    </ui5-timeline>
     
-  </div>
+  
 </ion-content>
