@@ -8,14 +8,28 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
+ 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ui5-button design="Default">Enabled</ui5-button>
+    <ui5-button disabled>Disabled</ui5-button>
+    <ui5-button design="Transparent">Cancel</ui5-button>
+    <ui5-button design="Positive">Approve</ui5-button>
+    <ui5-button design="Negative">Decline</ui5-button>
+    <ui5-button design="Emphasized">Subscribe</ui5-button>
+    <ui5-product-switch>
+      <ui5-product-switch-item heading="Home" subtitle="Central Home" icon="sap-icon://home"></ui5-product-switch-item>
+      <ui5-product-switch-item heading="Analytics Cloud" subtitle="Analytics Cloud" icon="sap-icon://business-objects-experience"></ui5-product-switch-item>
+      <ui5-product-switch-item heading="Catalog" subtitle="Ariba" icon="sap-icon://contacts"></ui5-product-switch-item>
+      <ui5-product-switch-item heading="Travel & Expense" subtitle="Concur" icon="sap-icon://flight"></ui5-product-switch-item>
+    </ui5-product-switch>
+  
+    <ui5-list id="myList" class="full-width">
+      <ui5-li icon="nutrition-activity" description="Tropical plant with an edible fruit" info="In-stock" info-state="Success">Pineapple</ui5-li>
+      <ui5-li icon="nutrition-activity" description="Occurs between red and yellow" info="Expires" info-state="Warning">Orange</ui5-li>
+      <ui5-li icon="nutrition-activity" description="The yellow lengthy fruit" info="Re-stock" info-state="Information">Blueberry</ui5-li>
+      <ui5-li icon="nutrition-activity" description="The tropical stone fruit" info="Re-stock" info-state="Error">Mango</ui5-li>
+    </ui5-list>
+    
   </div>
 </ion-content>
